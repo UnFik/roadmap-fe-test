@@ -1,0 +1,12 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "81:81"     # HTTP
+      - "443:443"   # HTTPS untuk production
+    # volumes:
+    #   # Mount SSL certificates untuk production
+    #   - ./ssl:/etc/httpd/conf/ssl:ro
+    restart: unless-stopped
