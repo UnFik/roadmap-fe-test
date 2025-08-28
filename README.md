@@ -34,3 +34,6 @@ Buka browser dan akses `http://localhost:81`
 - Bun
 - Docker + Nginx
 
+## Production Preview
+
+https://roadmap-fe-test.vercel.app/
